@@ -70,7 +70,7 @@ hr {
 }
 #menu.navbar-default {
 
-	background-image: linear-gradient(to right, #EEE8AA 0%, #EEE8AA 100%);
+	background-image: linear-gradient(to right, #efd896 0%, #efd896 100%);
 	border-color: rgba(231, 231, 231, 0);
 	box-shadow: 0 0 10px rgba(0,0,0,0.15)
 }
@@ -96,7 +96,7 @@ hr {
 	bottom: -1px;
 	width: 0;
 	height: 2px;
-	background: linear-gradient(to right, #EEE8AA 0%, #EEE8AA 100%);
+	background: linear-gradient(to right, #efd896 0%, #efd896 100%);
 	content: "";
 	transition: width 0.2s;
 }
@@ -122,10 +122,10 @@ hr {
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 	background-color: #fff;
-	border-color: #EEE8AA;
+	border-color: #efd896;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
-	background-color: #EEE8AA;
+	background-color: #efd896;
 }
 .section-title {
 	margin-bottom: 70px;
@@ -139,7 +139,7 @@ hr {
 .section-title h2::after {
 	position: absolute;
 	content: "";
-	background: linear-gradient(to right, #EEE8AA 0%, #EEE8AA 100%);
+	background: linear-gradient(to right, #efd896 0%, #efd896 100%);
 	height: 4px;
 	width: 60px;
 	bottom: 0;
@@ -153,8 +153,8 @@ hr {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	color: #fff;
-	background-color: #EEE8AA;
-	background-image: linear-gradient(to right, #EEE8AA 0%, #EEE8AA 100%);
+	background-color: #efd896;
+	background-image: linear-gradient(to right, #efd896 0%, #efd896 100%);
 	padding: 14px 34px;
 	letter-spacing: 1px;
 	margin: 0;
@@ -167,7 +167,7 @@ hr {
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #fff;
 	background-image: none;
-	background-color: #EEE8AA;
+	background-color: #efd896;
 }
 .btn:active, .btn.active {
 	background-image: none;
@@ -204,7 +204,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .intro h1 span {
 	font-weight: 800;
-	color: #EEE8AA;
+	color: #efd896;
 }
 .intro p {
 	color: #fff;
@@ -242,7 +242,7 @@ header .sub-intro {
 #about h2::after {
 	position: absolute;
 	content: "";
-	background: linear-gradient(to right, #0000 0%, #AB1F3A 100%);
+	background: linear-gradient(to right, #0000 0%, #efd896 100%);
 	height: 4px;
 	width: 60px;
 	bottom: 0;
@@ -342,7 +342,7 @@ header .sub-intro {
 	text-align: center;
 	margin: 0 auto;
 	color: #fff;
-	background: linear-gradient(to right, #EEE8AA 0%, #EEE8AA 100%);
+	background: linear-gradient(to right, #efd896 0%, #efd896 100%);
 	padding: 30% 0 0 0;
 	height: 100%;
 	width: 100%;
@@ -439,7 +439,7 @@ header .sub-intro {
 /* Contact Section */
 #contact {
 	padding: 60px 0 10px 0;
-	background: linear-gradient(to right, #AB1F3A 0%, #AB1F3A 100%);
+	background: linear-gradient(to right, #efd896 0%, #efd896 100%);
 	color: rgba(255,255,255,.75);
 }
 #contact .section-title {
@@ -561,7 +561,7 @@ color: #777;
 	transition: all 0.3s;
 }
 #contact .social i.fa:hover {
-	color: #EEE8AA;
+	color: #efd896;
 	background: #fff;
 }
 
@@ -576,10 +576,10 @@ color: #777;
 	padding: 1px;
 }
 #footer a {
-	color: #EEE8AA;
+	color: #efd896;
 }
 #footer a:hover {
-	border-bottom: 3px solid #AB1F3A;
+	border-bottom: 3px solid #efd896;
 }
 
 .letspic {
@@ -597,3 +597,5 @@ color: #777;
 	margin: 50px 0;
 }
 }
+
+
