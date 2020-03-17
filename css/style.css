@@ -96,7 +96,7 @@ hr {
 	bottom: -1px;
 	width: 0;
 	height: 2px;
-	background: linear-gradient(to right, #fffff 0%, #ffffff 100%);
+	background: linear-gradient(to right, #EEE8AA 0%, #EEE8AA 100%);
 	content: "";
 	transition: width 0.2s;
 }
