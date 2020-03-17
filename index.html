@@ -73,6 +73,94 @@
     </div>
   </div>
 </header>
+  
+<!--cover section slider -->
+<section id="home" class="home-cover">
+    <div class="cover_slider owl-carousel owl-theme">
+       
+        <div class="cover_item"  >
+            <div class="celebrating">
+                <center>
+                    <h1 id="demop" style="color:red;">
+                        Celebrated
+                        <a href="" id="enter" style="color:white;;font-weight: 700;"  class="typewrite" data-period="2000" data-type='[ "Technology", "Entertainment", "Design", "Ideas","Momentum" ]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </h1>
+                    <h5 style="color:white">18<sup>th</sup> January, 2020 - Pune</h5>
+                    <script>
+                        var TxtType = function(el, toRotate, period) {
+                            this.toRotate = toRotate;
+                            this.el = el;
+                            this.loopNum = 0;
+                            this.period = parseInt(period, 10) || 2000;
+                            this.txt = '';
+                            this.tick();
+                            this.isDeleting = false;
+                        };
+                        TxtType.prototype.tick = function() {
+                            var i = this.loopNum % this.toRotate.length;
+                            var fullTxt = this.toRotate[i];
+                            if (this.isDeleting) {
+                                this.txt = fullTxt.substring(0, this.txt.length - 1);
+                            } else {
+                                this.txt = fullTxt.substring(0, this.txt.length + 1);
+                            }
+                            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+                            var that = this;
+                            var delta = 200 - Math.random() * 100;
+                            if (this.isDeleting) {
+                                delta /= 2;
+                            }
+                            if (!this.isDeleting && this.txt === fullTxt) {
+                                delta = this.period;
+                                this.isDeleting = true;
+                            } else if (this.isDeleting && this.txt === '') {
+                                this.isDeleting = false;
+                                this.loopNum++;
+                                delta = 500;
+                            }
+                            setTimeout(function() {
+                                that.tick();
+                            }, delta);
+                        };
+                        window.onload = function() {
+                            var elements = document.getElementsByClassName('typewrite');
+                            for (var i = 0; i < elements.length; i++) {
+                                var toRotate = elements[i].getAttribute('data-type');
+                                var period = elements[i].getAttribute('data-period');
+                                if (toRotate) {
+                                    new TxtType(elements[i], JSON.parse(toRotate), period);
+                                }
+                            }
+                            // INJECT CSS
+                            var css = document.createElement("style");
+                            css.type = "text/css";
+                            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+                            document.body.appendChild(css);
+                        };
+                    </script>
+                </center>
+               <center>
+<!--                 <a href="https://www.townscript.com/e/tedxmitaoe-323323" id="bookticket"  class=" btn btn-primary btn-rounded" >
+                    Buy Tickets Now
+                </a> -->
+               </center>
+            </div>
+        </div>
+    </div>
+    <div class="cover_nav">
+        <ul class="cover_dots">
+
+            <div class="arrow bounce">
+                <a class="fa fa-arrow-down fa-2x" style="color: #e62b1e;" href="#downs"></a>
+              </div>
+
+          
+
+        </ul>
+    </div>
+</section>
 
 <!-- About Section -->
 <div id="about">
