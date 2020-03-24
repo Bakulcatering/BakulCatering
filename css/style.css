@@ -70,9 +70,23 @@ hr {
 }
 #menu.navbar-default {
 
-	background-image: linear-gradient(to right, #efd896 0%, #efd896 100%);
+	background-color: transparent;
 	border-color: rgba(231, 231, 231, 0);
-	box-shadow: 0 0 10px rgba(0,0,0,0.15)
+	/* box-shadow: 0 0 10px rgba(0,0,0,0.15) */
+}
+
+#menu.navbar-default.active {
+	background-color: #efd896;
+	transition: all 0.50s;
+}
+
+.navElem {
+	color: white !important;
+}
+
+.navElemChange {
+	color: #000000 !important;
+
 }
 #menu a.navbar-brand {
 	font-family: 'Raleway', sans-serif;
@@ -117,6 +131,10 @@ hr {
 	content: "" !important;
 	transition: width 0.2s !important;
 }
+#menu.bgScrolled {
+	background-image: linear-gradient(to right, #efd896 0%, #efd896 100%) !important;
+}
+
 .navbar-toggle {
 	border-radius: 0;
 }
@@ -182,9 +200,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 /* Header Section */
 .intro {
 	display: table;
+	height: 100vh;
 	width: 100%;
 	padding: 0;
-	background: url(../img/intro-bg.jpg) center center no-repeat;
+	background: url(../img/intro-bg.jpeg) center center no-repeat;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -588,7 +607,7 @@ color: #777;
 }
 
 .brand-pic {
-	margin-top: -10px;
+	margin-top: -30px;
 }
 
 
