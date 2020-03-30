@@ -76,7 +76,7 @@ hr {
 }
 
 #menu.navbar-default.active {
-	background-color: #efd896;
+	background-color: #654321;
 	transition: all 0.50s;
 }
 
@@ -347,6 +347,7 @@ header .sub-intro {
 	padding-top: 100px;
 	background-color: #eae9e9;
 }
+
 .button-item {
 	padding: 10px;
 }
@@ -468,7 +469,8 @@ header .sub-intro {
 /* Contact Section */
 #contact {
 	padding: 60px 0 10px 0;
-	background: linear-gradient(to right, #efd896 0%, #efd896 100%);
+	background: #654321;
+	/* background: linear-gradient(to right, #efd896 0%, #efd896 100%); */
 	color: rgba(255,255,255,.75);
 }
 #contact .section-title {
@@ -637,7 +639,11 @@ color: #777;
 	margin: 20px;
 }
 
-
+#gallery .gallery-img {
+	/* height: 100px; */
+	/* width: 100px; */
+	object-fit: scale-down;
+}
 @media (max-width: 768px) {
 #about img {
 	margin: 50px 0;
