@@ -430,39 +430,39 @@ header .sub-intro {
 	align-items: center;
 }
 
-/* Team Section */
-#team {
+/* special Section */
+#special {
 	padding: 50px 0;
 }
-#team h4 {
+#special h4 {
 	margin: 5px 0;
 }
-#team .team-img {
+#special .special-img {
 	width: 240px;
 }
-#team .thumbnail {
+#special .thumbnail {
 	background: transparent;
 	border: 0;
 }
-#team .thumbnail .caption {
+#special .thumbnail .caption {
 	padding: 10px 0 0 0;
 	color: #fff;
 }
 
-#team .section-title {
+#special .section-title {
 	margin-bottom: 2px;
 }
 
-#team .webdesign {
+#special .webdesign {
 	margin-bottom: 40px;
 }
 
-#team .hacker {
+#special .hacker {
 	height: 120px;
 	width: 120px;
 }
 
-#team .hack {
+#special .hack {
 	padding: 80px;
 }
 
