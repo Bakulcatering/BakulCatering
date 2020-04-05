@@ -681,4 +681,9 @@ color: #777;
 }
 }
 
+@media screen and (max-width: 600px) {
+	#demop {
+		font-size: 50px;
+	}
+}
 
