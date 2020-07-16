@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ruthie&display=swap" rel="stylesheet">
 
 
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
@@ -20,29 +21,39 @@
     <script
         async>(function (w, d) { w.CollectId = "5e81de2b080ddb1058a71d05"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
 </head>
-
 <!-- Navigation-->
 <nav id="menu" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span
-                    class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-            <a class="navbar-brand" href="#"><img src="img/logo.png" class="brand-pic"></a> </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand navbar-brand-centered">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" id="bakullogo" class="brand-pic">
+                </a>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-brand-centered">
+            <ul class="nav navbar-nav">
                 <li class="active "><a id="me1" href="#header" class="page-scroll">Home</a></li>
                 <li class=""><a id="me2" href="#about" class="page-scroll">About Us</a></li>
                 <li class=""><a id="me3" href="#buttons" class="page-scroll navElem">Photos</a></li>
-                <!-- <li class=""><a id= "me4" href="#portfolio" class="page-scroll navElem">Videos</a></li> -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
                 <li class=""><a id="me5" href="#special" class="page-scroll navElem">Our Special</a></li>
                 <li class=""><a id="me6" href="#team" class="page-scroll navElem">Events</a></li>
                 <li class=""><a id="me7" href="#contact" class="page-scroll navElem">Contact</a></li>
             </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+        </div><!-- /.navbar-collapse -->
     </div>
 </nav>
+
+
 
 
 <!-- Header -->
@@ -142,26 +153,62 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-md-6"> <img src="img/logo1.png" class="img-responsive" alt=""> </div>
                 <div class="col-xs-12 col-md-6">
                     <div class="about-text">
-                        <h2>About Us</h2>
-                        <p>
-                            "Bakul Catering" has been at the cutting edge of the industry since its establishment in
-                            2006, We provide
-                            outstanding standards, cost effective services to clients across a diverse range of
-                            industries.
-                        </p>
+                        <div class="row">
+                            <div>
+                                <h2>About</h2>
+                            </div>
+                            <div>
+                                <p>
+                                    "Bakul Catering" has been at the cutting edge of the industry since its
+                                    establishment in
+                                    2006, We provide
+                                    outstanding standards, cost effective services to clients across a diverse range of
+                                    industries.
+                                </p>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="col-xs-12 col-md-6"> <img src="img/logo1.png" class="img-responsive" alt=""> </div>
             </div>
         </div>
     </div>
 
-    <div id="portfolio" class="text-center">
+    <!--speciality heading-->
+    <div id = "spec-head" class="text-center">
         <div class="container">
             <div class="section-title">
-                <h2>View Our Photos</h2>
+                <h2>Speciality</h2>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6"> <img src="img/logo1.png" class="img-responsive" alt=""> </div>
+                <div class="col-xs-12 col-md-6">
+                    <div class="about-text">
+                        <div>
+                            <p>
+                                "Bakul Catering" has been at the cutting edge of the industry since its establishment in
+                                2006, We provide
+                                outstanding standards, cost effective services to clients across a diverse range of
+                                industries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Specials Section -->
+    <div id="special" class="text-center">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Specialities</h2>
             </div>
             <div class="row">
                 <div class="portfolio-items">
@@ -172,9 +219,10 @@
                                     <div class="hover-text">
                                         <h4>Corporate</h4>
                                     </div>
-                                    <img src="img/corporate/corporate (1).jpeg" class="img-responsive"
+                                    <img src="img/cuisines/chinese.jpg" class="img-responsive"
                                         alt="Project Title">
-                                </a> </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3">
@@ -184,7 +232,7 @@
                                     <div class="hover-text">
                                         <h4>Event</h4>
                                     </div>
-                                    <img src="img/corporate/corporate (1).jpeg" class="img-responsive"
+                                    <img src="img/cuisines/indian.jpg" class="img-responsive"
                                         alt="Project Title">
                                 </a> </div>
                         </div>
@@ -196,7 +244,7 @@
                                     <div class="hover-text">
                                         <h4>House Warming</h4>
                                     </div>
-                                    <img src="img/corporate/corporate (1).jpeg" class="img-responsive"
+                                    <img src="img/cuisines/italian.jpg" class="img-responsive"
                                         alt="Project Title">
                                 </a> </div>
                         </div>
@@ -208,23 +256,15 @@
                                     <div class="hover-text">
                                         <h4>Wedding</h4>
                                     </div>
-                                    <img src="img/corporate/corporate (1).jpeg" class="img-responsive"
+                                    <img src="img/cuisines/southindian.jpg" class="img-responsive"
                                         alt="Project Title">
                                 </a> </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Specials Section -->
-    <div id="special" class="text-center">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Special</h2>
-            </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="portfolio-items">
 
                     <div class="col-sm-6 col-md-4 col-lg-4">
@@ -248,20 +288,110 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!--gallery section-->
+    <div id="main-gallery" class="text-center">
+        <div class="container">
+            <div>
+                <h2>Gallery</h2>
             </div>
+            <div class="row">
+                <div class="portfolio-items">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="portfolio-item thumbnail">
+                            <div class="hover-bg"><a href="corporate.html" title="Project Title"
+                                    data-lightbox-gallery="gallery1" target="_blank">
+                                    <div class="hover-text">
+                                        <h4>Corporate</h4>
+                                    </div>
+                                    <img src="img/cuisines/chinese.jpg" class="img-responsive"
+                                        alt="Project Title">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="portfolio-item thumbnail">
+                            <div class="hover-bg"> <a href="event.html" title="Project Title"
+                                    data-lightbox-gallery="gallery1" target="_blank">
+                                    <div class="hover-text">
+                                        <h4>Event</h4>
+                                    </div>
+                                    <img src="img/cuisines/indian.jpg" class="img-responsive"
+                                        alt="Project Title">
+                                </a> </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="portfolio-item thumbnail">
+                            <div class="hover-bg"> <a href="housewarming.html" title="Project Title"
+                                    data-lightbox-gallery="gallery1" target="_blank">
+                                    <div class="hover-text">
+                                        <h4>House Warming</h4>
+                                    </div>
+                                    <img src="img/cuisines/italian.jpg" class="img-responsive"
+                                        alt="Project Title">
+                                </a> </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="portfolio-item thumbnail">
+                            <div class="hover-bg"> <a href="wedding.html" title="Project Title"
+                                    data-lightbox-gallery="gallery1" target="_blank">
+                                    <div class="hover-text">
+                                        <h4>Wedding</h4>
+                                    </div>
+                                    <img src="img/cuisines/southindian.jpg" class="img-responsive"
+                                        alt="Project Title">
+                                </a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="row button-row">
+                <div class="portfolio-items">
+                    <div class="col-sm-6 col-md-3 portfolio-item">
+                        <div class="cuisine-button">
+                            <img src="img/cuisines/italian.jpg">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 portfolio-item">
+                        <div class="cuisine-button">
+                            <img src="img/cuisines/indian.jpg">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 portfolio-item">
+                        <div class="cuisine-button">
+                            <img src="img/cuisines/chinese.jpg">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 portfolio-item">
+                        <div class="cuisine-button">
+                            <img src="img/cuisines/southindian.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
     </div>
 
 
+
+
+
     <!-- Testimonials Section -->
-    <section id="testimonials">
+    <!-- <section id="testimonials">
         <div class="row">
             <div class="section-title">
                 <h2>Testimonials</h2>
             </div>
         </div>
         <!-- Indicators -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
             <ol class="carousel-indicators indicator">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -271,7 +401,7 @@
                 <li data-target="#myCarousel" data-slide-to="5"></li>
             </ol>
             <!-- Wrapper for slides -->
-            <div class="carousel-inner">
+            <!-- <div class="carousel-inner">
                 <div class="item active event">
                     <div class="carousel-review">
                         <p>Thanks for making the event very successful<br>
@@ -289,15 +419,15 @@
                             60-70 लोकांच्या साठीच होते.
                             खूप लोकांनी एवढ्या कमी लोकांन साठी नाहीत म्हंटले.
                             मग मी माझ्या एका मित्राला माझा problem सांगीतला आणि त्याने तुमचा नंबर दिला.
-                            तुम्ही लगेच आमच्या घरी आलात आणि सगळं decide पण झाले.
-                            तुम्ही वास्तू पुजेला जे जेवण बनवलेत. ते एवढे छान झाले होते की सगळ्यांना खुप आवडले.
+                            तुम्ही लगेच आमच्या घरी आलात आणि सगळं decide पण झाले. -->
+                            <!-- तुम्ही वास्तू पुजेला जे जेवण बनवलेत. ते एवढे छान झाले होते की सगळ्यांना खुप आवडले.
                             Thank you sooo much.</p>
                         <p>- CI Monali Umale</p>
                     </div>
                 </div>
                 <div class="item event">
-                    <div class="carousel-review">
-                        <p>Hello Raj, Thank you & all your support staff for providing excellent catering services &
+                    <div class="carousel-review"> -->
+                        <!-- <p>Hello Raj, Thank you & all your support staff for providing excellent catering services &
                             making a great
                             event. We really appreciate it
                             We'll have another one soon
@@ -324,8 +454,8 @@
                             Next time gol gappe ka pani bhi pina hai sir!</p>
                         <p>- Renu Suri</p>
                     </div>
-                </div>
-                <div class="item event">
+                </div> -->
+                <!-- <div class="item event">
                     <div class="carousel-review">
                         <p>Thanks Raj.
                             Wishing you a very happy new year....
@@ -339,18 +469,18 @@
                         <p>- Amit Sharma</p>
                     </div>
                 </div>
-            </div>
+            </div> --> -->
             <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="sr-only">Previous </span>
             </a>
             <a class="right carousel-control" href="#myCarousel" data-slide="next">
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </section>
+    </section> --> -->
 
-    <!--Videos section-->
+    <!-- Videos section
     <div id="videos" class="text-center">
         <div class="container">
             <div class="section-title">
@@ -374,7 +504,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -408,39 +538,171 @@
 
 
 
-<div id="client">
-    <div class="section-title text-center">
-        <h2>Our Clients</h2>
-    </div>
-    <div class="row">
-        <div class="container">
-            <section class="customer-logos slider">
-                <div class="slide"><img src="img/Logo/cal.jpg"></div>
-                <div class="slide"><img src="img/Logo/cipy.jpg"></div>
-                <div class="slide"><img src="img/Logo/dem.jpg"></div>
-                <div class="slide"><img src="img/Logo/dmart.jpg"></div>
-                <div class="slide"><img src="img/Logo/ex-ser.jpg"></div>
-                <div class="slide"><img src="img/Logo/feather.jpg"></div>
-                <div class="slide"><img src="img/Logo/geo.jpg"></div>
-                <div class="slide"><img src="img/Logo/hyu.jpg"></div>
-                <div class="slide"><img src="img/Logo/idbi.jpg"></div>
-                <div class="slide"><img src="img/Logo/ino.jpg"></div>
-                <div class="slide"><img src="img/Logo/mahindra.jpg"></div>
-                <div class="slide"><img src="img/Logo/mess.jpg"></div>
-                <div class="slide"><img src="img/Logo/mh-state.jpg"></div>
-                <div class="slide"><img src="img/Logo/mh.jpg"></div>
-                <div class="slide"><img src="img/Logo/mother.jpg"></div>
-                <div class="slide"><img src="img/Logo/nag.jpg"></div>
-                <div class="slide"><img src="img/Logo/omega.jpg"></div>
-                <div class="slide"><img src="img/Logo/prerna.jpg"></div>
-                <div class="slide"><img src="img/Logo/rel.jpg"></div>
-                <div class="slide"><img src="img/Logo/sbi.jpg"></div>
-                <div class="slide"><img src="img/Logo/sch.jpg"></div>
-                <div class="slide"><img src="img/Logo/uni-clg.jpg"></div>
-            </section>
+    <div id="client">
+        <section id="testimonials">
+            <div class="row">
+                <div class="section-title">
+                    <h2>Testimonials</h2>
+                </div>
+            </div>
+            <!-- Indicators -->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+                <ol class="carousel-indicators indicator">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active event">
+                        <div class="carousel-review">
+                            <p>Thanks for making the event very successful<br>
+                                We feel very fortunate to get you guys ... really appreciate the arrangements, food & most
+                                important the
+                                attitude your team carries</p>
+                            <p>- Uday Dhavale</p>
+                        </div>
+                    </div>
+                    <div class="item event">
+                        <div class="carousel-review">
+                            <p>Actually मला सुध्दा माझा अनुभव share करायला आवडेल. 2 वर्षापूर्वी माझ्या घराच्या वास्तू पुजेचे
+                                केटरिंग
+                                तुम्ही च केले होते. अगदीच
+                                60-70 लोकांच्या साठीच होते.
+                                खूप लोकांनी एवढ्या कमी लोकांन साठी नाहीत म्हंटले.
+                                मग मी माझ्या एका मित्राला माझा problem सांगीतला आणि त्याने तुमचा नंबर दिला.
+                                तुम्ही लगेच आमच्या घरी आलात आणि सगळं decide पण झाले.
+                                तुम्ही वास्तू पुजेला जे जेवण बनवलेत. ते एवढे छान झाले होते की सगळ्यांना खुप आवडले.
+                                Thank you sooo much.</p>
+                            <p>- CI Monali Umale</p>
+                        </div>
+                    </div>
+                    <div class="item event">
+                        <div class="carousel-review">
+                            <p>Hello Raj, Thank you & all your support staff for providing excellent catering services &
+                                making a great
+                                event. We really appreciate it
+                                We'll have another one soon
+                            </p>
+                            <p>- Vijay Myntra</p>
+                        </div>
+                    </div>
+                    <div class="item event">
+                        <div class="carousel-review">
+                            <p>Excellent food 👌👌👌
+                                All members appreciated..
+                                Nice
+                            </p>
+                            <p>- Dattabhau</p>
+                        </div>
+                    </div>
+                    <div class="item event">
+                        <div class="carousel-review">
+                            <p>Hello sir we reached to Delhi .I want to say that your service in Marriage Function was too
+                                Good..
+                                Every one praised for food items..
+                                And catering decoration
+                                And your charming and dancing dolls were also beautiful. everyone became their fan.
+                                Next time gol gappe ka pani bhi pina hai sir!</p>
+                            <p>- Renu Suri</p>
+                        </div>
+                    </div>
+                    <div class="item event">
+                        <div class="carousel-review">
+                            <p>Thanks Raj.
+                                Wishing you a very happy new year....
+                                As expected it was extraordinary support from you, also everyone appreciated for food and
+                                quality of
+                                services.
+                                We will catch you soon for future events, also we will recommend you for such events.
+                                Thanks again,
+                                Regards
+                            </p>
+                            <p>- Amit Sharma</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="sr-only">Previous </span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+    
+        <div class="section-title text-center">
+            <h2>Our Clients</h2>
+        </div>
+        <div id="videos" class="text-center">
+            <div class="container">
+                <div class="section-title">
+                </div>
+                <div class="row">
+                    <div class="portfolio-items">
+                        <iframe width="374" height="255" src="https://www.youtube.com/embed/AW76LICOeYw" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <iframe width="374" height="255" src="https://www.youtube.com/embed/syjWCrTpO8o" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <iframe width="374" height="255" src="https://www.youtube.com/embed/q6qGsidLyKM" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div>
+                    <a href="" target="_blank">
+                        <button class="btn btn-custom btn-lg">View More</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="container">
+                <section class="customer-logos slider">
+                    <div class="slide">
+                        <div class="logo-slide-image"><img src="img/Logo/cal.jpg"></div>
+                    </div>
+                    <div class="slide"><img src="img/Logo/cipy.jpg"></div>
+                    <div class="slide"><img src="img/Logo/dem.jpg"></div>
+                    <div class="slide"><img src="img/Logo/dmart.jpg"></div>
+                    <div class="slide"><img src="img/Logo/ex-ser.jpg"></div>
+                    <div class="slide"><img src="img/Logo/feather.jpg"></div>
+                    <div class="slide"><img src="img/Logo/geo.jpg"></div>
+                    <div class="slide"><img src="img/Logo/hyu.jpg"></div>
+                    <div class="slide"><img src="img/Logo/idbi.jpg"></div>
+                    <div class="slide"><img src="img/Logo/ino.jpg"></div>
+                    <div class="slide"><img src="img/Logo/mahindra.jpg"></div>
+                    <div class="slide"><img src="img/Logo/mess.jpg"></div>
+                    <div class="slide"><img src="img/Logo/mh-state.jpg"></div>
+                    <div class="slide"><img src="img/Logo/mh.jpg"></div>
+                    <div class="slide"><img src="img/Logo/mother.jpg"></div>
+                    <div class="slide"><img src="img/Logo/nag.jpg"></div>
+                    <div class="slide"><img src="img/Logo/omega.jpg"></div>
+                    <div class="slide"><img src="img/Logo/prerna.jpg"></div>
+                    <div class="slide"><img src="img/Logo/rel.jpg"></div>
+                    <div class="slide"><img src="img/Logo/sbi.jpg"></div>
+                    <div class="slide"><img src="img/Logo/sch.jpg"></div>
+                    <div class="slide"><img src="img/Logo/icmr.jpg"></div>
+                    <div class="slide"><img src="img/Logo/nari.jpg"></div>
+                    <div class="slide"><img src="img/Logo/hir.jpg"></div>
+                    <div class="slide"><img src="img/Logo/tata.jpeg"></div>
+                    <div class="slide"><img src="img/Logo/rpi.jpg"></div>
+                    <div class="slide"><img src="img/Logo/nuv.jpeg"></div>
+                    <div class="slide"><img src="img/Logo/img (3).jpeg"></div>
+                    <div class="slide"><img src="img/Logo/img (4).jpeg"></div>
+                    <div class="slide"><img src="img/Logo/img (5).jpeg"></div>
+                    <div class="slide"><img src="img/Logo/img (7).jpeg"></div>
+                </section>
+            </div>
         </div>
     </div>
-</div>
 
     <!-- Contact Section -->
     <div id="contact">
@@ -448,7 +710,7 @@
             <div class="col-md-8">
                 <div class="row">
                     <div class="section-title">
-                        <h2>Contact Us</h2>
+                        <h2 class="text-center">Contact Us</h2>
                         <p>Please fill out the form below to send us an email and we will get back to you as soon as
                             possible.</p>
                     </div>
@@ -481,7 +743,6 @@
             </div>
             <div class="col-md-3 col-md-offset-1 contact-info">
                 <div class="contact-item">
-                    <h3>Contact Info</h3>
                     <p><span><i class="fa fa-map-marker"></i> Address</span>
                         P228, Mayur Trade Center,<br>
                         Chinchwad Station, Pune-19
@@ -513,17 +774,17 @@
         </div>
 
         <!-- Footer Section -->
-        <div id="footer">
+        <!-- <div id="footer">
             <div class="container text-center">
                 <p><a href="#webdesign">Bakul Catering</a>
                 </p>
             </div>
-        </div>
+        </div> -->
 
         <script type="text/javascript" src="js/custom.js"></script>
         <script type="text/javascript" src="js/SmoothScroll.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
 
 
 

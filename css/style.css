@@ -6,16 +6,19 @@ body, html {
 	font-weight: 400;
 	width: 100% !important;
 	height: 100% !important;
-
+	background-color: transparent;
+	background-image: url(../img/backgrounds/about-bg.png);
+	background-size: 100% 100%;
+	/* background-repeat: no-repeat; */
 }
 
 h2, h3, h4 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Ruthie', sans-serif;
 }
 h2 {
 	margin: 0 0 20px 0;
-	font-weight: 800;
-	font-size: 36px;
+	font-weight: 100;
+	font-size: 56px;
 	color: black;
 }
 h3 {
@@ -34,6 +37,7 @@ h5 {
 }
 p {
 	font-size: 15px;
+	color: #EFD896;
 }
 p.intro {
 	margin: 12px 0 0;
@@ -89,14 +93,27 @@ hr {
 	color: #000000 !important;
 
 }
+.navbar-brand-centered {
+	position: absolute;
+	left: 50%;
+	display: block;
+	width: 160px;
+	text-align: center;
+	background-color: transparent;
+}
+.navbar>.container .navbar-brand-centered, 
+.navbar>.container-fluid .navbar-brand-centered {
+	margin-left: -80px;
+}
+
 #menu a.navbar-brand {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open-sans', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
 	color: #fff;
 }
 #menu.navbar-default .navbar-nav > li > a {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open-sans', sans-serif;
 	color: #fff;
 	font-size: 15px;
 	font-weight: 600;
@@ -155,7 +172,7 @@ hr {
 	margin-bottom: 15px;
 	padding-bottom: 15px;
 }
-.section-title h2::after {
+/* .section-title h2::after {
 	position: absolute;
 	content: "";
 	background: linear-gradient(to right, #efd896 0%, #efd896 100%);
@@ -163,8 +180,8 @@ hr {
 	width: 60px;
 	bottom: 0;
 	margin-left: -30px;
-	left: 50%;
-}
+	left: 50%; 
+} */
 .section-title p {
 	font-size: 18px;
 }
@@ -204,7 +221,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	height: 100vh;
 	width: 100%;
 	padding: 0;
-	background: url(../img/intro-bg.jpg) center center no-repeat;
+	background: url(../img/backgrounds/intro-bg.png) center center no-repeat;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -248,7 +265,8 @@ header .sub-intro {
 /* About Section */
 #about {
 	padding: 100px 0;
-	border-bottom: 1px solid rgba(57, 61, 58, 0.15);
+	/* background-color:  #080401; */
+	background: url(../img/backgrounds/about-bg.png);
 
 }
 #about h3 {
@@ -259,8 +277,10 @@ header .sub-intro {
 	position: relative;
 	margin-bottom: 15px;
 	padding-bottom: 15px;
+	color: #AB7626;
+	text-align: center;
 }
-#about h2::after {
+/* #about h2::after {
 	position: absolute;
 	content: "";
 	background: linear-gradient(to right, #0000 0%, #efd896 100%);
@@ -268,7 +288,7 @@ header .sub-intro {
 	width: 60px;
 	bottom: 0;
 	left: 0;
-}
+} */
 #about .about-text li {
 	margin-bottom: 6px;
 	margin-left: 6px;
@@ -283,65 +303,88 @@ header .sub-intro {
 	font-weight: 300;
 	padding-right: 8px;
 }
+
 #about img {
 	width: 520px;
 	margin-top: 10px;
 	background: #fff;
 	border-right: 0;
 }
+
 #about p {
 	padding-top: 40px;
 	line-height: 30px;
 	font-size: 20px;
+	color: #EFD896;
 	margin: 30px 0;
+	font-family: Open Sans;
+font-style: normal;
+
+font-size: 18px;
+line-height: 28px;
+
+
+display: flex;
+align-items: flex-end;
+text-align: center;
 }
 
-/* LetsPy Section */
-#LetsPy {
-	padding: 60px 0;
-}
-#LetsPy h3 {
-	font-size: 22px;
-	margin: 0 0 20px 0;
-}
-#LetsPy h2 {
+#spec-head {
+	height: 500px;
+
+    background-color: #170c02;
+    border-top-left-radius: 100%;  /* 100px of height + 10px of border */
+    border-top-right-radius: 100%; /* 100px of height + 10px of border */
+    border: 10px solid transparent;
+    border-bottom: 0;
 	position: relative;
-	margin-bottom: 15px;
-	padding-bottom: 15px;
+
 }
-#LetsPy h2::after {
-	position: absolute;
-	content: "";
-	background: linear-gradient(to right, #0000 0%, #0000 100%);
-	height: 4px;
-	width: 60px;
-	bottom: 0;
-	left: 0;
+
+#spec-head h2 {
+	margin-top: 35px;
+	margin-bottom: 0px;
+	color: #AB7626;
 }
-#LetsPy .LetsPy-text li {
-	margin-bottom: 6px;
-	margin-left: 6px;
-	list-style: none;
-	padding: 0;
+/* Speciality section */
+#speciality {
+	background-color: #170c02;
 }
-#LetsPy .LetsPy-text li:before {
-	content: '\f00c';
-	font-family: 'FontAwesome';
-	color: #0000;
-	font-size: 11px;
-	font-weight: 300;
-	padding-right: 8px;
+
+#speciality h2 {
+	color: #AB7626;
+	margin-top: 25px;
 }
-#LetsPy img {
-	width: 520px;
-	margin-top: 10px;
-	background: #fff;
-	border-right: 0;
+
+#speciality p {
+	margin: 10px;
+	padding: 20px;
+	color: #EFD896;
 }
-#LetsPy p {
-	line-height: 24px;
-	margin: 30px 0;
+
+/* gall */ 
+#main-gallery {
+	background-image: url(../img/backgrounds/gallery-bg.jpg);
+	background-size: cover;
 }
+
+#main-gallery h2 {
+	color: white;
+	margin: 180px;
+	font-size: 120px;
+}
+
+#main-gallery .button-row {
+	margin-bottom: 10px;
+	margin: 10px;
+	padding: 10px;
+}
+
+#main-gallery .cuisine-button{
+	margin: 10px;
+	padding: 15px;
+}
+
 
 
 #buttons {
@@ -359,11 +402,15 @@ header .sub-intro {
 #portfolio {
 	padding: 100px 0;
 	overflow-x: hidden;
-	background-color: #eae9e9;
+	background: url(../img/backgrounds/gallery-bg.jpg) center center no-repeat;
+ 
 }
 .portfolio-item {
 	margin: 1px -11px 0 -10px;
-	padding: 10px;
+	/* padding: 10px; */
+	border-radius: 0%;
+	border: 0px;
+	background-color: transparent;
 }
 .portfolio-item .hover-bg {
 	overflow: hidden;
@@ -375,7 +422,7 @@ header .sub-intro {
 	text-align: center;
 	margin: 0 auto;
 	color: #fff;
-	background: linear-gradient(to right, #efd896 0%, #efd896 100%);
+	background: linear-gradient(to right,rgba(23, 12, 2, 0.44) 0%, rgba(23, 12, 2, 0.44) 100%);
 	padding: 30% 0 0 0;
 	height: 100%;
 	width: 100%;
@@ -383,7 +430,7 @@ header .sub-intro {
 	transition: all 0.5s;
 }
 .hover-bg .hover-text>h4 {
-	opacity: 0;
+	opacity: 10;
 	color: #fff;
 	-webkit-transform: translateY(100%);
 	transform: translateY(100%);
@@ -442,7 +489,15 @@ header .sub-intro {
 /* special Section */
 #special {
 	padding: 50px 0;
+	background-image: url(../img/backgrounds/cuisines-bg.png);
+	background-size: contain;
+
 }
+#special h2 {
+	color:#AB7626;
+	font-weight: 100;
+}
+
 #special h4 {
 	margin: 5px 0;
 }
@@ -455,46 +510,36 @@ header .sub-intro {
 }
 #special .thumbnail .caption {
 	padding: 10px 0 0 0;
-	color: #fff;
+	color: #AB7626;
 }
 
 #special .section-title {
 	margin-bottom: 2px;
 }
 
-#special .webdesign {
-	margin-bottom: 40px;
-}
-
-#special .hacker {
-	height: 120px;
-	width: 120px;
-}
-
-#special .hack {
-	padding: 80px;
-}
-
 /* Contact Section */
 #contact {
 	padding: 60px 0 10px 0;
-	background: #654321;
+	background: url(../img/backgrounds/contact-bg.jpg) center center no-repeat;
+
+	/* background: #654321; */
 	/* background: linear-gradient(to right, #efd896 0%, #efd896 100%); */
-	color: rgba(255,255,255,.75);
+	color: #AB7626
 }
 #contact .section-title {
 	margin-bottom: 40px;
+	color: #AB7626;
 }
 #contact .section-title p {
 	font-size: 16px;
 }
 #contact h2 {
-	color: #fff;
+	color: #AB7626;
 	margin-top: 10px;
 	margin-bottom: 15px;
 	padding-bottom: 15px;
 }
-#contact .section-title h2::after {
+/* #contact .section-title h2::after {
 	position: absolute;
 	content: "";
 	background: rgba(255,255,255,.3);
@@ -502,9 +547,9 @@ header .sub-intro {
 	width: 60px;
 	bottom: 0;
 	left: 30px;
-}
+} */
 #contact h3 {
-	color: #fff;
+	color: #AB7626;
 	margin-top: 80px;
 	margin-bottom: 25px;
 	padding-bottom: 20px;
@@ -622,14 +667,15 @@ color: #777;
 	border-bottom: 3px solid #efd896;
 }
 
-.letspic {
-	height: 500px;
-	margin-left: 0.002px;
-}
 
+#bakullogo {
+	margin-top: -55px;
+}
 .brand-pic {
+	
 	margin-top: -40px;
-	margin-left: -70px;
+	margin-left: -40px;
+
 }
 #gallery {
 	padding-top: 50px;
@@ -686,4 +732,3 @@ color: #777;
 		font-size: 50px;
 	}
 }
-
